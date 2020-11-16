@@ -69,7 +69,7 @@ class PinController extends AbstractController
     }
 
     /**
-     * @Route("/pin/{id<[0-9]+>}/edit", name="edit_pin", methods={"GET", "POST"})
+     * @Route("/pin/{id<[0-9]+>}/edit", name="edit_pin", methods={"GET", "PUT"})
      * @param Pin $pin
      * @param Request $request
      * @param EntityManagerInterface $em
@@ -80,7 +80,9 @@ class PinController extends AbstractController
     {
 
 
-        $form = $this->createForm(PinType::class, $pin);
+        $form = $this->createForm(PinType::class, $pin, [
+            'method'=> 'PUT'
+        ]);
 
         $form->handleRequest($request);
 
