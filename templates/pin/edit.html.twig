@@ -1,0 +1,14 @@
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Pin {{ pin.id }}{% endblock %}
+
+{% block body %}
+    <h1> Edit Pin </h1>
+
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    <input type="submit" value="Create Pin" formnovalidate>
+    {{ form_end(form) }}
+    <a href="{{ path('home') }}">Go back</a>
+{% endblock %}

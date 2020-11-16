@@ -4,13 +4,14 @@
 {% block title %}{{ pin.title }}{% endblock %}
 
 {% block body %}
-<article>
-    <h1>
-        {{ pin.title }}
-    </h1>
-    <p>
-        {{ pin.description }}
-    </p>
-</article>
+    <article>
+        <h1>
+            {{ pin.title }}
+        </h1>
+        <p>
+            {{ pin.description }}
+        </p>
+    </article>
+    <a href="{{ path('edit_pin', {id: pin.id}) }}">Edit pin</a>
     <a href="{{ path('home') }}">Go back</a>
 {% endblock %}
