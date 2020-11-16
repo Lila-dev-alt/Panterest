@@ -13,5 +13,11 @@
         </p>
     </article>
     <a href="{{ path('edit_pin', {id: pin.id}) }}">Edit pin</a>
+    <a href="#" onclick="event.preventDefault(); confirm('Are you sure to delete this ?') && document.getElementById('js-pin-delete').submit();">Delete</a>
     <a href="{{ path('home') }}">Go back</a>
+
+    <form id="js-pin-delete" action="{{ path('delete_pin', {id: pin.id}) }}" method="post" style="display: none;">
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="submit" value="Delete">
+    </form>
 {% endblock %}
