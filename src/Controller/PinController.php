@@ -102,7 +102,7 @@ class PinController extends AbstractController
     }
 
     /**
-     * @Route("/pin/{id<[0-9]+>}/delete", name="delete_pin", methods={"DELETE"})
+     * @Route("/pin/{id<[0-9]+>}", name="delete_pin", methods={"DELETE"})
      * @param Request $request
      * @param Pin $pin
      * @param EntityManagerInterface $em
