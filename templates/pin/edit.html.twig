@@ -6,9 +6,6 @@
 {% block body %}
     <h1> Edit Pin </h1>
 
-    {{ form_start(form) }}
-    {{ form_widget(form) }}
-    <input type="submit" value="Edit Pin" formnovalidate>
-    {{ form_end(form) }}
+    {{ include('pin/_form.html.twig', {submitButtonText: 'Edit Pin'}) }}
     <a href="{{ path('home') }}">Go back</a>
 {% endblock %}
