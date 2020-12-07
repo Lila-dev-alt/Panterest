@@ -14,7 +14,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class PinController extends AbstractController
 {
     /**
-     * @Route("/pin", name="home", methods="GET")
+     * @Route("/", name="home", methods="GET")
      * @param PinRepository $pinRepository
      * @return Response
      */
