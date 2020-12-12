@@ -3,26 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
         {% block stylesheets %}
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         {% endblock %}
-        <style>
-            .alert {
-                padding: 10px;
-                color: white;
-                text-align: center;
-                margin: 0;
-                border: none;
-                border-radius: 0;
-            }
-
-            .alert-success {
-                background-color: green;
-            }
-            .alert-danger {
-                background-color: red;
-            }
-        </style>
     </head>
     <body>
     {{ include('layouts/partials/flash_messages.html.twig') }}

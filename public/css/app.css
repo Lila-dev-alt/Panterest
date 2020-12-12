@@ -1,0 +1,18 @@
+html, body {
+    font-family: 'Montserrat', sans-serif;
+}
+.alert {
+    padding: 10px;
+    color: white;
+    text-align: center;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+}
+
+.alert-success {
+    background-color: green;
+}
+.alert-danger {
+    background-color: red;
+}
