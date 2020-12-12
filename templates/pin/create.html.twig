@@ -4,8 +4,11 @@
 {% block title %}New Pin{% endblock %}
 
 {% block body %}
-  <h1> Create Pin </h1>
+  <div class="row">
+    <div class="col-md-6 mx-auto">
+      <h1> Create Pin </h1>
+      {{ include('pin/_form.html.twig', {submitButtonText: 'Create Pin'}) }}
+    </div>
+  </div>
 
-  {{ include('pin/_form.html.twig', {submitButtonText: 'Create Pin'}) }}
-    <a href="{{ path('home') }}">Go back</a>
 {% endblock %}
