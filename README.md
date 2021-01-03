@@ -2,14 +2,15 @@
 
 
 
-Projet Clone de Pinterest
+Projet "Clone" de Pinterest en Symfony et Bootstrap
 
 Fonctionnalités:
 
-- bundle psysh
-- fonction twig plurify
-- param converter
-- form creation/edition/supprression de pin
-- messages flash
-- customisation page 404
-- filtre twig date: time ago
+- Bundle psysh
+- Fonction twig plurify
+- Param converter
+- Form creation/edition/suppression de pin
+- Messages flash
+- Customisation page 404
+- Filtre twig date: time ago
+- Bundle VichUploader
