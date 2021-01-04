@@ -11,4 +11,10 @@ import './styles/app.css';
 // start the Stimulus application
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+const $ = require('jquery');
 
+
+$('.custom-file-input').on('change', function(e) {
+    let inputFile = e.currentTarget;
+    $(inputFile).parent().find('.custom-file-label').html(inputFile.files[0].name)
+})
