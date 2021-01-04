@@ -1,3 +1,5 @@
+@import "~bootstrap";
+
 html, body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -15,4 +17,7 @@ html, body {
 }
 .alert-danger {
     background-color: red;
+}
+.vich-image .form-check {
+    @extend .mt-3
 }
