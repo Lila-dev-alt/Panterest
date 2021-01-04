@@ -1,0 +1,27 @@
+# See dos how to configure the bundle: https://symfony.com/doc/current/bundles/LiipImagineBundle/basic-usage.html
+liip_imagine:
+    # valid drivers options include "gd" or "gmagick" or "imagick"
+    driver: "imagick"
+
+    filter_sets:
+        square_thumb_medium:
+            filters:
+                thumbnail:
+                    size: [300, 300]
+                    mode: outbound
+                    allow_upscale: true
+        square_thumb_small:
+            filters:
+                thumbnail:
+                    size: [200, 200]
+                    mode: outbound
+                    allow_upscale: true
+
+    # configure resolvers
+    resolvers :
+        default :
+            web_path : ~
+    loaders:
+        default:
+            filesystem:
+                data_root: "/Users/elisabourg/Desktop/panterest/"

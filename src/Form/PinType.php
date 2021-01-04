@@ -22,7 +22,8 @@ class PinType extends AbstractType
                 'label' => 'Image (JPG or PNG file)',
                 'required' => false,
                 'allow_delete' => true,
-                'download_uri' => true,
+                'download_uri' => false,
+                'imagine_pattern' => 'square_thumb_small'
             ])
         ;
     }
