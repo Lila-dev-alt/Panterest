@@ -24,4 +24,4 @@ liip_imagine:
     loaders:
         default:
             filesystem:
-                data_root: "/Users/elisabourg/Desktop/panterest/"
+                data_root: "/Users/elisabourg/Desktop/panterest/public/"
